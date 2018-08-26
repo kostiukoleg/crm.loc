@@ -10,7 +10,11 @@
   "author": "Kostiuk Oleg",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
+    "mongoose": "^5.2.9",
+    "morgan": "^1.9.0",
     "sublime": "^1.2.1"
   },
   "devDependencies": {

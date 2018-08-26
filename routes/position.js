@@ -2,7 +2,9 @@ const express = require('express');
 const controller = require('../controllers/position.js');
 const router = express.Router();
 
-router.post("/login", controller.login);
-router.post("/register", controller.register);
+router.get("/:categoryId", controller.getById);
+router.post("/", controller.create);
+router.patch("/:id", controller.update);
+router.delete("/:id", controller.remove);
 
 module.exports = router;
