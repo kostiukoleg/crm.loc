@@ -4,11 +4,16 @@
   "description": "CRM for buisness Ecostyle",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "server": "nodemon index"
   },
   "author": "Kostiuk Oleg",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "sublime": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
   }
 }
