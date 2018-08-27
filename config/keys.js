@@ -1,3 +1,4 @@
 module.exports = {
-    mongoUri: 'mongodb://localhost:27017/ecostyle'
-}
+    mongoUri: 'mongodb://localhost:27017/ecostyle',
+    jwt: 'dev-jwt',
+};
