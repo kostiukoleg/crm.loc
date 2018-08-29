@@ -21,6 +21,7 @@ mongoose.connect(keys.mongoUri, {useNewUrlParser: true}).then(function(){
 app.use(passport.initialize());
 require('./middleware/passport.js')(passport);
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads'));
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
