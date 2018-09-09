@@ -43,7 +43,7 @@ module.exports.create = async function (req,res) {
         const maxOrder = lastOrder ? lastOrder.order : 0;
 
         const order = await new Order({
-            list: erq.body.list,
+            list: req.body.list,
             user: req.user.id,
             order: maxOrder + 1
         }).save();
