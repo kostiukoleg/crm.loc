@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "server": "nodemon index"
+    "server": "nodemon index",
+    "client-install": "npm install --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Kostiuk Oleg",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.3.0",
