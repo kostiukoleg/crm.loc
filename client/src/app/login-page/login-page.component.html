@@ -1,16 +1,33 @@
-<form method="POST" action="https://bootsnipp.com/login" accept-charset="UTF-8" role="form" id="loginform" class="form-signin"><input
-    name="_token" type="hidden" value="x1Cjq2ikhpkO5iqze4qwviURL35ZwyGhNKa5czzK">
-  <fieldset>
-    <h3 class="sign-up-title" style="color:dimgray; text-align: center">Welcome back! Please sign in</h3>
-
-    <hr class="colorgraph">
-    <input class="form-control email-title" placeholder="E-mail" name="email" type="text">
-    <input class="form-control" placeholder="Password" name="password" type="password" value="">
-    <a class="pull-right" href="https://bootsnipp.com/password">Forgot password?</a>
-    <div class="checkbox" style="width:140px;">
-      <label><input name="remember" type="checkbox" value="Remember Me"> Remember Me</label>
+<div class="card card-login mx-auto mt-5">
+  <div class="card-header">Login</div>
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <div class="form-label-group">
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required"
+            autofocus="autofocus">
+          <label for="inputEmail">Email address</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-label-group">
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+          <label for="inputPassword">Password</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me">
+            Remember Password
+          </label>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-block" routerLink="/">Login</a>
+    </form>
+    <div class="text-center">
+      <a class="d-block small mt-3" routerLink="/register">Register an Account</a>
+      <a class="d-block small" routerLink="/forgot-password">Forgot Password?</a>
     </div>
-    <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
-    <p class="text-center"><a href="https://bootsnipp.com/register">Register for an account?</a></p>
-  </fieldset>
-</form>
+  </div>
+</div>

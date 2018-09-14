@@ -3,6 +3,7 @@ import { AuthLayoutComponent } from './shared/layouts/auth-layout/auth-layout.co
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SiteLayoutComponent } from './shared/layouts/site-layout/site-layout.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 const routes: Routes = [
     {
@@ -12,6 +13,10 @@ const routes: Routes = [
             {
                 path: 'login',
                 component: LoginPageComponent
+            },
+            {
+                path: 'register',
+                component: RegisterPageComponent
             }
         ]
     },
