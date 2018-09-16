@@ -47,7 +47,12 @@
           </div>
         </div>
       </div>
-      <a class="btn btn-primary btn-block" routerLink="/register">Register</a>
+      <button 
+      type="submit" 
+      class="btn btn-primary btn-block" 
+      [disabled]="form.invalid ||form.disabled">
+        Register
+      </button>
     </form>
     <div class="text-center">
       <a class="d-block small mt-3" routerLink="/login">Login Page</a>
